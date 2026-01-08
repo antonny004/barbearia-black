@@ -9,7 +9,17 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: white;
-      background-color: black;
+
+      /* 🔴 FOTO DE FUNDO (troque o nome da foto aqui) 🔴 */
+      background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+      ),
+      url("SUA_FOTO_AQUI.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
     .container {
@@ -18,30 +28,26 @@
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .status {
+      margin: 20px auto;
+      padding: 15px;
+      width: 260px;
+      background: black;
+      border: 2px solid gold;
+      font-size: 20px;
+      border-radius: 8px;
+    }
+
+    .endereco {
+      margin-top: 20px;
+      font-size: 18px;
     }
 
     .btn {
       display: inline-block;
       margin-top: 25px;
-      padding: 15px 25px;
-      background: green;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <h1>💈 Barbearia Black</h1>
-    <p>João Pessoa - Alto do Mateus</p>
-
-    <a class="btn" href="https://wa.me/5583998792009" target="_blank">
-      💬 Chamar no WhatsApp
-    </a>
-  </div>
-</body>
-</html>
+      padding: 15px 25
