@@ -8,8 +8,18 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-color: black;
       color: white;
+
+      /* FUNDO COM FOTO */
+      background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+      ),
+      url("foto1.jpg"); /* TROQUE SE PRECISAR */
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
     .container {
@@ -18,23 +28,22 @@
     }
 
     h1 {
-      font-size: 40px;
-      margin-bottom: 15px;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
     }
 
     .status {
-      margin: 20px auto;
+      margin: 30px auto;
       padding: 15px;
       width: 260px;
-      background: #111;
+      background: black;
       border: 2px solid gold;
       font-size: 20px;
-      border-radius: 8px;
-    }
-
-    .endereco {
-      margin-top: 20px;
-      font-size: 18px;
     }
 
     .btn {
@@ -43,17 +52,3 @@
       padding: 15px 25px;
       background: green;
       color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <h1>💈 Barbearia Black</h1>
-
-    <div class="status">
-      🔴 Status: Aten
-      
